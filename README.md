@@ -1,108 +1,105 @@
-# Iris Flower Classification & Prediction System
+# 🌸 Iris Flower Classification & Prediction System
 
 ## Overview
 
-This project applies Machine Learning techniques to classify Iris flower species based on sepal and petal measurements. The project includes data preprocessing, exploratory data analysis (EDA), model comparison, performance evaluation, and deployment using Streamlit.
+The Iris Flower Classification & Prediction System is a Machine Learning web application that predicts the species of an Iris flower based on its physical measurements.
 
-## Objectives
+The application uses a trained Support Vector Machine (SVM) model and provides real-time predictions through an interactive Streamlit interface.
 
-* Analyze the Iris dataset through exploratory data analysis.
-* Perform data preprocessing and feature engineering.
-* Train and compare multiple Machine Learning models.
-* Evaluate model performance using classification metrics.
-* Deploy the best-performing model as an interactive web application.
+🔗 Live Demo: https://merline1306-nrs3j99v4wmgurikeypez2.streamlit.app/
 
-## Technologies Used
+---
 
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Scikit-learn
-* Streamlit
-* Joblib
+## Problem Statement
 
-## Data Preprocessing
+Identifying Iris flower species manually can be time-consuming and prone to errors. This project automates the classification process using Machine Learning techniques.
 
-The following preprocessing steps were performed:
+The model predicts one of the following species:
 
-* Missing value analysis
-* Duplicate record detection
-* Outlier detection using the IQR method
-* Feature scaling using StandardScaler
-* Label encoding of target classes
-* Train-test split for model evaluation
+- Iris Setosa
+- Iris Versicolor
+- Iris Virginica
 
-## Exploratory Data Analysis
+based on flower measurements provided by the user.
 
-EDA was conducted to understand the dataset and feature relationships through:
+---
 
-* Species distribution analysis
-* Correlation heatmap
-* Pair plots
-* Feature distribution histograms
-* Boxplots for outlier detection
+## Features
 
-## Machine Learning Models
+- Interactive web application built with Streamlit
+- Real-time species prediction
+- User-friendly interface
+- Machine Learning-based classification
+- End-to-end workflow from data preprocessing to deployment
+- Cloud deployment using Streamlit Community Cloud
 
-The following classification algorithms were trained and evaluated:
+---
 
-* Support Vector Machine (SVM)
-* K-Nearest Neighbors (KNN)
-* Random Forest
-* Decision Tree
-* Logistic Regression
+## Dataset
+
+The project uses the famous Iris Dataset containing 150 flower samples with the following features:
+
+- Sepal Length (cm)
+- Sepal Width (cm)
+- Petal Length (cm)
+- Petal Width (cm)
+
+Target Variable:
+
+- Species
+
+---
+
+## Project Workflow
+
+1. Data Collection
+2. Data Cleaning
+3. Exploratory Data Analysis (EDA)
+4. Missing Value Analysis
+5. Outlier Detection and Treatment
+6. Feature Scaling
+7. Model Training
+8. Model Evaluation
+9. Model Deployment using Streamlit
+
+---
+
+## Machine Learning Models Evaluated
+
+The following classification algorithms were compared:
+
+- Support Vector Machine (SVM)
+- K-Nearest Neighbors (KNN)
+- Random Forest Classifier
+- Decision Tree Classifier
+- Logistic Regression
 
 ### Model Performance
 
-| Model               | Accuracy |
-| ------------------- | -------- |
-| SVM                 | 96.67%   |
-| KNN                 | 96.67%   |
-| Random Forest       | 93.33%   |
-| Decision Tree       | 93.33%   |
-| Logistic Regression | 93.33%   |
+| Model | Accuracy |
+|---------|---------|
+| SVM | 96.67% |
+| KNN | 96.67% |
+| Random Forest | 93.33% |
+| Decision Tree | 93.33% |
+| Logistic Regression | 93.33% |
 
-SVM achieved the highest performance and was selected as the final deployment model.
+The SVM model was selected for deployment due to its superior performance.
 
-## Model Evaluation
+---
 
-Performance was assessed using:
+## Technologies Used
 
-* Accuracy Score
-* Confusion Matrix
-* Classification Report
-* Cross-Validation
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Streamlit
+- Joblib
+- GitHub
 
-## Streamlit Application
-
-The trained model was deployed as an interactive Streamlit application where users can:
-
-* Enter flower measurements
-* Predict the Iris species in real time
-* Explore a simple Machine Learning prediction workflow
-
-## Project Structure
-
-iris-flower-classification-app/
-
-├── app.py
-
-├── model.pkl
-
-├── scaler.pkl
-
-├── requirements.txt
-
-├── Iris_Classification.ipynb
-
-└── README.md
-
-## Results
-
-The project successfully classifies Iris flowers with an accuracy of 96.67% and demonstrates a complete Machine Learning workflow from data preprocessing and model development to deployment.
-
-
-
-SASTRA Deemed University
+---
+## Conclusion
+This project demonstrates an end-to-end Machine Learning workflow, from data preprocessing and model development to deployment as a live web application for real-time Iris flower species prediction.
