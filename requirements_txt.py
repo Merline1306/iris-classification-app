@@ -7,8 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/19mnYD0ZB0h9BGUN7R7dr6j5Bq6Hq0uTG
 
 streamlit
-scikit-learn
-numpy
-joblib
 pandas
+numpy
+scikit-learn
+joblib
 """
