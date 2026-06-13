@@ -12,7 +12,7 @@ import joblib
 import numpy as np
 
 # Load trained model
-model = joblib.load("/content/model.pkl")
+model = joblib.load("model.pkl")
 
 # Species mapping
 species_names = {
@@ -68,4 +68,5 @@ if st.button("Predict Species"):
 
     st.success(
         f"Predicted Species: {species_names[prediction[0]]}"
+
     )
